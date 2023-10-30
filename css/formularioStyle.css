@@ -1,5 +1,5 @@
 #formulario {
-    padding: 60px 0;
+    padding: 80px 0;
     background: #f4f1ea;
 }
 
@@ -39,6 +39,7 @@
 
 #formulario img {
     width: 500px;
+    border-radius: 8px;
 }
 
 form {
@@ -64,6 +65,7 @@ textarea::placeholder {
 .field {
     border: solid 1px #287472;
     padding: 15px;
+    border-radius: 8px;
 }
 
 .field:focus {

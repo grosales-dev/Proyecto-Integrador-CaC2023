@@ -9,29 +9,29 @@
         <script src="https://kit.fontawesome.com/0354a5edab.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header id="mainheader">
-            <nav id="navbar">
-                <div class="contenedor">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="img/logo/imagotipo.png" alt="Logo Peluditos" />
-                        </a>
-                    </div>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#acerca-de">Acerca de</a></li>
-                        <li><a href="#requisitos">Requisitos</a></li>
-                        <li><a href="#como-ayudar">¿Cómo ayudar?</a></li>
-                        <li><a href="adopcion.html">Mascotas en adopción</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="#">Donar</a></li>
-                    </ul>
-                </div>
+        <header>
+            <a href="index.html">
+                <img class="logo" src="img/logo/imagotipo.png" alt="Logo Peluditos" />
+            </a>
+            <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars fa-xl" style="color: #f4f1ea"></i></button>
+            <nav class="nav" id="nav">
+                <button id="cerrar" class="cerrar-menu">
+                    <i class="fa-solid fa-xmark fa-xl" style="color: #f4f1ea"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#portada">Inicio</a></li>
+                    <li><a href="#acerca-de">Acerca de</a></li>
+                    <li><a href="#requisitos">Requisitos</a></li>
+                    <li><a href="#como-ayudar">¿Cómo ayudar?</a></li>
+                    <li><a href="adopcion.html">Mascotas en adopción</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Donar</a></li>
+                </ul>
             </nav>
         </header>
 
         <section id="portada">
-            <div class="contenedor">
+            <div class="portada-lema">
                 <h1 class="display-1">
                     Un amigo <br />
                     para toda <br />
@@ -152,7 +152,8 @@
                             <h4>​Firmar un contrato de adopción</h4>
                         </div>
                         <p class="txt-large txt-dark">
-                            Es un documento legal que establece los derechos y responsabilidades del adoptante y del refugio o asociación de animales, para que los animalito reciba el trato que merecen.
+                            Es un documento legal que establece los derechos y responsabilidades del adoptante y del
+                            refugio o asociación de animales, para que los animalito reciba el trato que merecen.
                         </p>
                     </div>
                 </div>
@@ -508,5 +509,6 @@
                 });
             });
         </script>
+        <script src="js/main.js"></script>
     </body>
 </html>

@@ -82,52 +82,79 @@ a {
 }
 
 /* Mainheader */
-#mainheader{
+header {
+    background: #287472;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 3rem;
     position: sticky;
     top: 0;
-    width: 100%;
-    z-index: 9999;
+    z-index: 99999;
 }
-/* Navbar */
-#navbar {
+
+header .logo {
+    max-width: 12rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
     color: #f4f1ea;
-    background: #287472;
-    overflow: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
-#navbar a {
-    color: #f4f1ea;
-    font-weight: 700;
+.nav-list li a:hover {
+    background: #39a6a0;
 }
 
-#navbar .logo img {
-    float: left;
-    padding-top: 16px 0;
-    width: 40vh;
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 
-#navbar ul {
-    padding-top: 10px;
-    list-style: none;
-    float: right;
-}
+@media screen and (max-width: 1150px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
 
-#navbar ul li {
-    float: left;
-}
+    .nav {
+        opacity: 0;
+        visibility: hidden;
 
-#navbar ul li a {
-    display: block;
-    padding: 10px 20px;
-    text-align: center;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #287472;
+        padding: 1.5rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
 
-#navbar ul li a:hover {
-    color: #f4f1ea;
-    background-color: #39a6a0;
-    border-radius: 8px;
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
 }
 
 /* Portada */
@@ -136,14 +163,14 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: end;
 }
 
-#portada .contenedor {
+#portada .portada-lema {
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 120px;
     color: #f4f1ea;
-    position: relative;
-    left: 400px;
 }
 
 #portada .btn:hover {
@@ -152,7 +179,7 @@ a {
 
 /* Acerca de */
 #acerca-de {
-    padding: 60px 0;
+    padding: 80px 0;
     background: #f4f1ea;
 }
 
@@ -197,7 +224,7 @@ a {
 
 /* Requisitos */
 #requisitos {
-    padding: 60px 0;
+    padding: 80px 0;
     background: #39a6a0;
     color: #f4f1ea;
 }
@@ -247,7 +274,7 @@ a {
 
 /* ¿Cómo ayudar? */
 #como-ayudar {
-    padding: 60px 0;
+    padding: 80px 0;
     background: #f4f1ea;
 }
 
@@ -346,7 +373,7 @@ a {
 
 /* Consejos para cuidar a tu mascota */
 #consejos {
-    padding: 60px 0;
+    padding: 80px 0;
     background: #39a6a0;
     color: #f4f1ea;
 }

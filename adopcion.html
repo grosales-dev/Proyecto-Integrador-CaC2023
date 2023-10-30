@@ -11,26 +11,27 @@
         <script src="https://kit.fontawesome.com/0354a5edab.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header id="mainheader">
-            <nav id="navbar">
-                <div class="contenedor">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="img/logo/imagotipo.png" alt="Logo Peluditos" />
-                        </a>
-                    </div>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="index.html#acerca-de">Acerca de</a></li>
-                        <li><a href="index.html#requisitos">Requisitos</a></li>
-                        <li><a href="index.html#como-ayudar">¿Cómo ayudar?</a></li>
-                        <li><a href="adopcion.html">Mascotas en adopción</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="#">Donar</a></li>
-                    </ul>
-                </div>
+        <header>
+            <a href="index.html">
+                <img class="logo" src="img/logo/imagotipo.png" alt="Logo Peluditos" />
+            </a>
+            <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars fa-xl" style="color: #f4f1ea"></i></button>
+            <nav class="nav" id="nav">
+                <button id="cerrar" class="cerrar-menu">
+                    <i class="fa-solid fa-xmark fa-xl" style="color: #f4f1ea"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#acerca-de">Acerca de</a></li>
+                    <li><a href="index.html#requisitos">Requisitos</a></li>
+                    <li><a href="index.html#como-ayudar">¿Cómo ayudar?</a></li>
+                    <li><a href="adopcion.html">Mascotas en adopción</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Donar</a></li>
+                </ul>
             </nav>
         </header>
+
         <main>
             <article id="titulo-mascotas-adopcion">
                 <div class="encabezado">
@@ -288,5 +289,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/main.js"></script>
     </body>
 </html>

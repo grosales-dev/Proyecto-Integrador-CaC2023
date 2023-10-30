@@ -83,53 +83,87 @@ a {
     color: #f4f1ea;
 }
 
-/* Navbar */
-#navbar {
-    color: #f4f1ea;
+/* Mainheader */
+header {
     background: #287472;
-    overflow: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
 }
 
-#navbar a {
+header .logo {
+    max-width: 12rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
     color: #f4f1ea;
-    font-weight: 700;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
-#navbar .logo img {
-    float: left;
-    padding-top: 16px 0;
-    width: 40vh;
+.nav-list li a:hover {
+    background: #39a6a0;
 }
 
-#navbar ul {
-    padding-top: 10px;
-    list-style: none;
-    float: right;
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 
-#navbar ul li {
-    float: left;
-}
+@media screen and (max-width: 1150px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
 
-#navbar ul li a {
-    display: block;
-    padding: 10px 20px;
-    text-align: center;
-}
+    .nav {
+        opacity: 0;
+        visibility: hidden;
 
-#navbar ul li a:hover {
-    color: #f4f1ea;
-    background-color: #39a6a0;
-    border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #287472;
+        padding: 1.5rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
 }
 
 /* ------------------------------------------------------- */
 /* Estilos página adopción */
 /* ------------------------------------------------------- */
 #titulo-mascotas-adopcion {
-    padding: 60px 0 0 0;
+    padding: 80px 0 0 0;
 }
 
 .encabezado {
